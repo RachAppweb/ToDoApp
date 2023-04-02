@@ -1,0 +1,217 @@
+
+*{ box-sizing: border-box;
+}
+
+
+
+  
+  
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+      
+      
+      
+      .container {
+        width: 500px;
+        margin: 20px auto;
+      }
+      .form {
+        background-color: #eee;
+        border-radius: 6px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+      }
+      .input {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        flex: 1;
+      }
+      .input:focus {
+        outline: none;
+      }
+      .add {
+        border: none;
+        background-color: #0a941c;
+        color: white;
+        padding: 10px;
+        border-radius: 6px;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+      .tasks {
+        background-color: #eee;
+        margin-top: 20px;
+        border-radius: 6px;
+        padding: 20px;
+      }
+      .tasks .task {
+        background-color: white;
+        padding: 10px;
+        border-radius: 6px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.3s;
+        cursor: pointer;
+        border: 1px solid #ccc;
+      }
+      .tasks .task:not(:last-child) {
+        margin-bottom: 15px;
+      }
+      .tasks .task:hover {
+        background-color: #f7f7f7;
+      }
+      .tasks .task.done {
+        opacity: 0.5;
+        border-color: #0ab126;
+      }
+      .tasks .task span {
+        font-weight: bold;
+        font-size: 10px;
+        background-color: red;
+        color: white;
+        padding: 2px 6px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      /* .clearall {
+        border: none;
+        background-color: #f21808;
+        color: white;
+        padding: 10px;
+        border-radius: 6px;
+        margin-right: 50px;
+        float: right;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        cursor: pointer;
+      } */
+      .clearall {
+        border: none;
+        background-color: #f21808;
+        color: white;
+       
+        margin-left: 70px;
+        padding: 10px;
+        border-radius: 6px;
+    
+        cursor: pointer;
+      }
+      @media screen and (max-width:650px){
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .toggle-button {
+            display: flex;
+        }
+    
+        .navbar-links {
+            display: none;
+            width: 100%;
+        }
+    
+        .navbar-links ul {
+            width: 100%;
+            flex-direction: column;
+        }
+    
+        .navbar-links ul li {
+            text-align: center;
+        }
+    
+        .navbar-links ul li a {
+            padding: .5rem 1rem;
+        }
+    
+        .navbar-links.active {
+            display: flex;
+        }
+        .clearall {
+            border: none;
+            background-color: #f21808;
+            color: white;
+            margin-left: 30px;
+            padding: 10px;
+            border-radius: 6px;
+           
+          }
+
+        .container {
+            width: 300px;
+            margin: 17px auto;
+          }
+          .form {
+            background-color: #eee;
+            border-radius: 6px;
+            padding: 17px;
+            display: flex;
+            align-items: center;
+          }
+          .input {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            flex: 1;
+          }
+          .add {
+            border: none;
+            background-color: #0ab126;
+            color: white;
+            padding: 7px;
+            border-radius: 6px;
+            margin-left: 10px;
+            cursor: pointer;
+          }
+          .tasks {
+            background-color: #eee;
+            margin-top: 20px;
+            border-radius: 6px;
+            padding: 17px;
+          }
+          .tasks .task span {
+            font-weight: bold;
+            font-size: 7px;
+            background-color: red;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+          
+      }
+     
+/* @media (max-width: 800px) {
+    
+} */
